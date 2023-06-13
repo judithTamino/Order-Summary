@@ -42,6 +42,12 @@ img {
   height: auto;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  margin-inline: 2em;
+  text-align: center;
+}
+
 /*================ Order Summary ================*/
 .order-summary__container {
   width: 100%;
@@ -58,12 +64,7 @@ img {
   background-color: var(--card-color);
   overflow: hidden;
   border-radius: 20px;
-}
-.order-summary__content,
-.order-summary__pricing,
-.order-summary__btns {
-  margin-inline: 2em;
-  text-align: center;
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
 
 .order-summary__title {
@@ -112,4 +113,19 @@ img {
 .btn__link {
   color: var(--text-color);
   margin-bottom: 2rem;
+}
+
+/*=============== ACTIVE STATE ===============*/
+.order-summary__pricing-link:hover {
+  color: hsla(245, 75%, 52%, .8);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: hsla(245, 75%, 52%, .8);
+  transition: background .4s;
+}
+
+.btn__link:hover {
+  color: var(--title-color);
 }
