@@ -1,0 +1,42 @@
+/*================ GOOGLE FONTS ================*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*================ VARIABLES CSS ================*/
+:root {
+  /*====== Colors ======*/
+  --primary-color: hsl(245, 75%, 52%);
+  --secondary-color: hsl(225, 100%, 98%);
+  --title-colr: hsl(223, 47%, 23%);
+  --text-color: hsl(224, 23%, 55%);
+  --body-color: hsl(225, 100%, 94%);
+  /*==== Font & Typography ====*/
+  --body-font: 'Red Hat Display', sans-serif;
+  --title-font-size: 1.5rem; /* 24px */
+  --normal-font-size: 1rem; /* 16px */ 
+  /*==== Font Weight ====*/
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+/*================ BASE ================*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
